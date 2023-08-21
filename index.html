@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     
@@ -12,7 +13,7 @@
 
         <div class="image">
             <img src="vinyl.jpg" alt="vinyl background image" class="image">
-            <div class="banner">  <p class>Havana</p> </div>
+            <div class="banner">  <p class>ODIN RECORDS</p> </div>
             <img src="logo.png" alt="logo" class="logo"> 
         </div>
 
@@ -23,42 +24,48 @@
                 <p>Let's do this!</p>
             </div>
             <div class="forms">
-                <form action="example.com/path" method="post">
+                <form action="" method="post" id="a-form">
                     
                             <div class="rows">
                                 <div class="first-row">
                                     <div class="form-container">
                                      <label for="first_name">FIRST NAME</label>
-                                     <input type="text" id="first_name">
+                                     <input type="text" id="first_name" maxlength="20" required>
                                      </div>
                                      <div class="form-container">
                                         <label for="email">EMAIL</label>
-                                        <input type="email" id="email">
+                                        <input type="email" id="email" required>
                                         </div>
                                         <div class="form-container">
-                                            <label for="first_name">PASSWORD</label>
-                                            <input type="password" id="first-name">
+                                            <label for="password">PASSWORD</label>
+                                            <input type="password" id="password" required> 
                                             </div>
                                 </div>
                                 <div class="second-row">
                                     <div class="form-container">
-                                        <label for="first-name">LAST NAME</label>
-                                        <input type="text" id="first_name">
+                                        <label for="last-name">LAST NAME</label>
+                                        <input type="text" id="last-name" maxlength="20" required>
                                         </div>
                                         <div class="form-container">
-                                            <label for="first_name">PHONE NUMBER</label>
-                                            <input type="text" id="first_name">
+                                            <label for="phone">PHONE NUMBER</label>
+                                            <input type="tel" id="phone" maxlength="15" required>
                                             </div>
                                             <div class="form-container">
-                                                <label for="first_name">CONFIRM PASSWORD</label>
-                                                <input type="text" id="first_name">
+                                                <label for="password2">CONFIRM PASSWORD</label>
+                                                <input type="password" id="password2" required>
                                                 </div>
                                 </div>
                             </div>
+                        
                    
                 </form>
             </div>
-            <div class="bottom-text"></div>
+            <div class="bottom-text">
+                <button type="submit" form="a-form">
+                        CREATE ACCOUNT
+                </button>
+                <p>Already have an account? <span>Log in</span></p>
+            </div>
         </div>
     </div>
 </body>
