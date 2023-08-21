@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.image{
+    position: relative;
+    max-width: 100%;
+    z-index: -1;
+    display: flex;
+}
+
+.banner{
+    position: absolute;
+    width: 100%;
+    background-color: yellow;
+    opacity: 0.5;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    top: 20vh;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.logo{
+width: 10vh;
+
+}
+
+.banner > p{
+    color: black;
+    font-family: norse-bold;
+    font-size: 10vh;
+    margin: 0;
+}
+
+
+
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse-Bold.otf);
+  }
