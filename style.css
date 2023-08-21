@@ -2,16 +2,18 @@ html,
 body {
   margin: 0;
   height: 100%;
+  font-family: monospace;
 }
 
 .container{
     display: flex;
     height: 100%;
+   
 }
 
 .image{
     position: relative;
-    max-width: 100%;
+    flex: 1 1 70%;
     z-index: -1;
     display: flex;
 }
@@ -19,28 +21,75 @@ body {
 .banner{
     position: absolute;
     width: 100%;
-    background-color: yellow;
-    opacity: 0.5;
+    background-color: rgb(255, 255, 0, 0.5);
+   
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     top: 20vh;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    
 }
 
 .logo{
-width: 10vh;
+width: 15vh;
+position: absolute;
+top: 2vh;
+left: 2vh;
+}
 
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 221, 210);
+    width: 100% ;
+    
 }
 
 .banner > p{
-    color: black;
+    color: rgb(0, 0, 0, 0.8);
     font-family: norse-bold;
     font-size: 10vh;
     margin: 0;
 }
+.top-text{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.top-text > p{
+    font-size: 2.25rem;
+    font-family: monospace;
+    text-align: justify;
+}
 
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    margin-bottom: 20px;
+}
 
+.rows{
+    display: flex;
+    margin: 20px;
+}
+.first-row{
+    padding: 20px;
+}
+.second-row{
+    padding: 20px;
+}
+
+div > label{
+    font-size: 1.5rem;
+}
+input{
+    height: 2rem;
+    font-size: 1em;
+}
+forms{
+    background-color: rgb(173, 19, 19);
+}
 
 @font-face {
     font-family: norse-bold;
