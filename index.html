@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     
@@ -15,6 +15,9 @@
             <img src="vinyl.jpg" alt="vinyl background image" class="image">
             <div class="banner">  <p class>ODIN RECORDS</p> </div>
             <img src="logo.png" alt="logo" class="logo"> 
+            <div class="shoutout">Photo by <a href="https://unsplash.com/@kobuagency?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">KOBU Agency</a> on <a href="https://unsplash.com/photos/3hWg9QKl5k8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            / Logo by unknown author on <a href="https://www.pngkit.com/bigpic/u2w7e6y3u2q8a9o0/">PNGkit</a>
+            </div>
         </div>
 
         <div class="content">
@@ -24,7 +27,7 @@
                 <p>Let's do this!</p>
             </div>
             <div class="forms">
-                <form action="" method="post" id="a-form">
+                <form action="#" method="post" id="a-form" novalidate>
                     
                             <div class="rows">
                                 <div class="first-row">
@@ -38,7 +41,7 @@
                                         </div>
                                         <div class="form-container">
                                             <label for="password">PASSWORD</label>
-                                            <input type="password" id="password" required> 
+                                            <input type="password" id="password" required minlength="5"> 
                                             </div>
                                 </div>
                                 <div class="second-row">
@@ -48,7 +51,7 @@
                                         </div>
                                         <div class="form-container">
                                             <label for="phone">PHONE NUMBER</label>
-                                            <input type="tel" id="phone" maxlength="15" required>
+                                            <input type="tel" id="phone" maxlength="15" minlength="7"  required >
                                             </div>
                                             <div class="form-container">
                                                 <label for="password2">CONFIRM PASSWORD</label>
@@ -56,7 +59,7 @@
                                                 </div>
                                 </div>
                             </div>
-                        
+                        <p class="error-message">  </p>
                    
                 </form>
             </div>

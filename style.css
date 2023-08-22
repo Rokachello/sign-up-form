@@ -1,3 +1,7 @@
+:root{
+--orange: rgb(236, 175, 0);   
+}
+
 html,
 body {
   margin: 0;
@@ -20,21 +24,24 @@ body {
 .content{
     display: flex;
     flex-direction: column;
-    background-color: rgb(228, 221, 210);
+    background-color: rgb(204, 195, 183);
     width: 100% ;
+}
+.shoutout{
+    position: absolute;
+    bottom: 10px;
+    padding-left: 10px;
 }
 
 .banner{
     position: absolute;
     width: 100%;
-    background-color: rgb(255, 255, 0, 0.5);
-   
+    background-color: var(--orange);   
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     top: 15vh;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    
 }
 
 .logo{
@@ -111,7 +118,7 @@ button{
     height: 50px;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: rgb(255, 255, 0, 0.5);
+    background-color: var(--orange);
     border-radius: 10px;
     font-size: 2.25rem;
     font-family: monospace;
@@ -119,14 +126,24 @@ button{
 }
 
 input:focus {
-    background-color:  rgb(255, 255, 0, 0.5);;
+    border: 5px solid var(--orange);
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.534);
   }
 
 
 p > span{
-    color: rgb(255, 166, 0);
+    color: var(--orange);
     font-size: 1.2em;
     font-weight: 800;
+}
+
+.error-message{
+    color: red;
+    font-weight: 800;
+}
+
+.error-red{
+    border: 3px solid red;
 }
 
 @font-face {
