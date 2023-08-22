@@ -8,7 +8,7 @@ const phone = document.querySelector("#phone")
 const password = document.querySelector("#password")
 const passwordCheck = document.querySelector("#password2")
 const inputs = document.querySelectorAll("input")
-errorMessage.textContent = "No error"
+errorMessage.textContent = ""
 let validity = false
 
 password.addEventListener("input", (event) =>{
@@ -47,7 +47,7 @@ form.addEventListener("submit", (event) => {
   passwordCheck.addEventListener("input", (event) => {
     
     if(password.value != passwordCheck.value){
-        errorMessage.textContent = "Passwords doesn't match"
+        errorMessage.textContent = "Passwords do not match"
         } else {
             errorMessage.textContent = ""
         }
@@ -60,7 +60,7 @@ function formIsValid(){
 for (i = 0; i < inputs.length; ++i) {
 
     if(password.value != passwordCheck.value){
-        errorMessage.textContent = "Passwords doesn't match"
+        errorMessage.textContent = "Passwords do not match"
         validity= true
         } else {
             errorMessage.textContent = ""
